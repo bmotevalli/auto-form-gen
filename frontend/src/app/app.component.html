@@ -1,0 +1,20 @@
+@if (schema() && uischema()) {
+<mat-card>
+  <h2>JSONForms Angular Example</h2>
+  <jsonforms
+    [schema]="schema()"
+    [uischema]="uischema()"
+    [renderers]="renderers"
+  ></jsonforms>
+  <!-- <button mat-raised-button color="primary" (click)="submit()">Submit</button> -->
+</mat-card>
+} @else {
+<p>Loading schema...</p>
+}
+
+<!-- @if (submittedData()) {
+<mat-card>
+  <h3>Submitted Data:</h3>
+  <pre>{{ submittedData() | json }}</pre>
+</mat-card>
+} -->
